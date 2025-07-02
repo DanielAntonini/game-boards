@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lúdico de la Casa</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lobster&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados para aplicar las fuentes */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+        }
+        .font-title {
+            font-family: 'Lobster', cursive;
+        }
+        /* Efecto de gradiente sutil en el fondo del cuerpo */
+        body {
+            background-image: radial-gradient(circle at top, #1f2937, #111827);
+        }
+        /* Estilo para las tarjetas de juego */
+        .game-card {
+            background-color: #1f2937; /* bg-gray-800 */
+            border: 1px solid #374151; /* border-gray-700 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(251, 146, 60, 0.1); /* Sombra con color naranja */
+        }
+        .game-card-content {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <!-- Encabezado Principal -->
+    <header class="text-center py-12 px-4 bg-gray-900/50 backdrop-blur-sm sticky top-0 z-10">
+        <h1 class="font-title text-5xl md:text-7xl text-orange-400">🍽️ Menú Lúdico de la Casa</h1>
+        <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-400">Una cena de emociones. Elegí tu entrada, tu plato fuerte, compartí un cooperativo, o cerrá la noche con traición o terror. Cada juego es una historia que está por servirse.</p>
+    </header>
+
+    <!-- Contenido Principal del Menú -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+
+        <!-- Sección: Entradas -->
+        <section id="entradas" class="my-16">
+            <h2 class="font-title text-4xl md:text-5xl text-orange-300 mb-4">🥢 Entradas para Abrir la Mesa</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta: Taco, Gato... -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🌮 Taco, Gato, Cabra, Queso, Pizza</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 3–8</p>
+                        <p><strong>Duración:</strong> 10–15 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Una ronda comienza. Repetís palabras al ritmo, soltás cartas. Todo parece un juego tonto… Hasta que una coincidencia lo cambia todo: explosión de manos sobre la mesa, gritos, risas, caos. No hay estrategia, solo reflejos y adrenalina. Ideal para romper el hielo y las uñas.</p>
+                </div>
+                <!-- Tarjeta: Sushi Go Party! -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🍣 Sushi Go Party!</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–8</p>
+                        <p><strong>Duración:</strong> 20–30 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Un banquete visual. Makis, tempura, nigiris y postres pasan de mano en mano. Elegís una carta y entregás el resto. Pero en ese pase suave, se juegan traiciones disfrazadas de arroz. ¿Vas por ese combo de sashimi perfecto o se lo negás a tu rival? Todo parece tierno... hasta que se juega con hambre.</p>
+                </div>
+                <!-- Tarjeta: UNO No Mercy -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🔥 UNO No Mercy</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–10</p>
+                        <p><strong>Duración:</strong> 20–30 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Sabés lo que es UNO, pero no sabés lo que es el odio hasta que jugás esta versión. Cartas que obligan a robar medio mazo, giros inesperados y venganzas que se cocinan en voz baja. Si querés caos, risas y drama en 10 minutos… servite una porción bien picante.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Platos Fuertes -->
+        <section id="platos-fuertes" class="my-16">
+            <h2 class="font-title text-4xl md:text-5xl text-orange-300 mb-4">🍲 Platos Fuertes con Sabor a Decisión</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta: Ticket to Ride -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🚂 Ticket to Ride: Europa</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–5</p>
+                        <p><strong>Duración:</strong> 45–75 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-yellow-400">🟡 Media</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Recibís tus boletos. Nadie sabe tu plan. Pero vos ya sabés que Berlín y Moscú tienen que estar conectadas. Cada turno es una tensión silenciosa: si alguien te bloquea la ruta, perdés todo. Trenes elegantes, jugadas finas, y una carrera que se cocina en voz baja. No hay golpes… pero sí cortes finos y letales.</p>
+                </div>
+                <!-- Tarjeta: Carcassonne -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🏰 Carcassonne</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–5</p>
+                        <p><strong>Duración:</strong> 30–45 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-yellow-400">🟡 Media</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Del pasto nacen caminos. Las ciudades crecen. Tu pueblo se expande. Cada loseta es un mundo, y cada meeple que ponés, una apuesta. Vas construyendo... y de pronto otro jugador aparece en tu ciudad. Tranquilo por fuera, pero lleno de guerra territorial bajo la mesa.</p>
+                </div>
+                <!-- Tarjeta: Panic Lab -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🧪 Panic Lab</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–10</p>
+                        <p><strong>Duración:</strong> 15–20 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Un mutante escapa. Cambia de forma, de color, de dirección. Y todos al mismo tiempo intentan encontrarlo con los ojos abiertos como platos. No hay turnos. No hay perdón. Solo velocidad, gritos cruzados y una risa histérica que no sabés de dónde vino.</p>
+                </div>
+                <!-- Tarjeta: 100 -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🔢 100</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–5</p>
+                        <p><strong>Duración:</strong> 20 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Cuatro columnas. Cien cartas. Solo una misión: cooperar para ordenar todo... sin hablar. Parece fácil. No lo es. Y cuando te das cuenta que ya no queda lugar, la tensión explota. Un reto matemático que pone a prueba la sincronía de la mesa.</p>
+                </div>
+                <!-- Tarjeta: Rummikub -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🧠 Rummikub</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–4</p>
+                        <p><strong>Duración:</strong> 30–45 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-yellow-400">🟡 Media</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Del caos al orden. Tenés fichas y tenés tiempo. Combiná, robá, armá jugadas como en un Tetris numérico. Pero ojo… los demás también quieren liberarse. Y justo cuando pensás que la jugada es tuya, alguien reacomoda todo y te deja mirando.</p>
+                </div>
+                <!-- Tarjeta: Luna Capital -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🏙️ Luna Capital</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 1–4</p>
+                        <p><strong>Duración:</strong> 30–45 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-yellow-400">🟡 Media</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Construís la primera ciudad en la Luna. Suena épico. Pero los recursos son limitados, los terrenos no siempre encajan, y los rivales no paran. Colocación estratégica, combos lunares y decisiones que flotan en gravedad cero.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Cooperativos -->
+        <section id="cooperativos" class="my-16">
+            <h2 class="font-title text-4xl md:text-5xl text-orange-300 mb-4">🤝 Platos para Compartir (Cooperativos)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta: Pandemic -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🦠 Pandemic</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–4</p>
+                        <p><strong>Duración:</strong> 45 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-red-400">🔴 Difícil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Las enfermedades se esparcen. Las ciudades caen. El mundo pide ayuda. Y ustedes son lo único entre la cura y el colapso. Cada decisión pesa. ¿Dónde ir? ¿Qué priorizar? ¿Podemos dejar caer Nueva York? Si fallan, lo hacen juntos. Pero si ganan… lo celebran como héroes.</p>
+                </div>
+                <!-- Tarjeta: Pandemic: Respuesta Rápida -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🚑 Pandemic: Respuesta Rápida</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–4</p>
+                        <p><strong>Duración:</strong> 20–30 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-yellow-400">🟡 Media</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">El reloj corre. Estás en un avión que sobrevuela zonas en crisis. Tirás dados, organizás suministros, gritás instrucciones… y no hay tiempo para dudas. El caos no te espera. ¿Podés actuar bajo presión? Acá no ganan los mejores… ganan los que no se paralizan.</p>
+                </div>
+                <!-- Tarjeta: Magic Maze -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🧭 Magic Maze</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 1–8</p>
+                        <p><strong>Duración:</strong> 15–20 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-yellow-400">🟡 Media</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Un mago, un bárbaro, un elfo y un enano entran al shopping. Sí, leíste bien. Tienen que robar equipamiento y escapar, pero sin hablar. Solo miradas, movimientos… y frustración muda. Cuando te pongan el peón rojo en frente, vas a entender lo que es el odio telepático.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Postres -->
+        <section id="postres" class="my-16">
+            <h2 class="font-title text-4xl md:text-5xl text-orange-300 mb-4">🍰 Postres Dulces... con un Final Amargo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Tarjeta: La Resistencia -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🕵️‍♂️ La Resistencia</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 5–10</p>
+                        <p><strong>Duración:</strong> 30 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Una misión. Un equipo. Pero hay espías infiltrados que sabotean desde adentro. Nadie sabe quién es quién. Todos fingen. Las miradas se endurecen. Si sos inocente, vivís en tensión. Si sos espía… mentís como un campeón. Un flan de traición con topping de sospecha.</p>
+                </div>
+                <!-- Tarjeta: Monopoly Deal -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">💰 Monopoly Deal</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–5</p>
+                        <p><strong>Duración:</strong> 15–30 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Olvidate del Monopoly eterno. Acá se gana con velocidad y cartas agresivas. Robá propiedades, usá acciones sucias, y ganá en 20 minutos. Ideal para quien ama el dinero... pero no quiere hipotecar una noche entera.</p>
+                </div>
+                <!-- Tarjeta: Monopoly Bid -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">📦 Monopoly Bid</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–5</p>
+                        <p><strong>Duración:</strong> 15–25 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Subastas rápidas, decisiones apuradas, y más suerte que estrategia. Pero ojo: cuando tu carta cambia todo, la mesa grita. El primo caótico de Monopoly, en porciones pequeñas pero bien picantes.</p>
+                </div>
+                <!-- Tarjeta: Virus! -->
+                <div class="game-card rounded-xl p-6">
+                    <h3 class="text-2xl font-bold text-white mb-3">🧬 Virus!</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 2–6</p>
+                        <p><strong>Duración:</strong> 15–20 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-green-400">🟢 Fácil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Tenés que completar tu cuerpo con órganos sanos. Pero todos quieren infectarte. Cartas que curan, enferman, roban y destruyen. Nadie está a salvo. Rápido, directo, y con una cuota justa de maldad viral.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección: El Shot Final -->
+        <section id="shot-final" class="my-16">
+            <h2 class="font-title text-4xl md:text-5xl text-red-500 mb-4">🥃 El Shot Final (Solo para Jugadores de Hierro)</h2>
+             <div class="flex justify-center">
+                <!-- Tarjeta: Nemesis -->
+                <div class="game-card rounded-xl p-6 border-red-500/50 max-w-lg">
+                    <h3 class="text-2xl font-bold text-white mb-3">👽 Nemesis: Lockdown</h3>
+                    <div class="space-y-2 text-sm text-gray-400 mb-4">
+                        <p><strong>Jugadores:</strong> 1–5</p>
+                        <p><strong>Duración:</strong> 90–180 min</p>
+                        <p><strong>Dificultad:</strong> <span class="text-red-400">🔴 Difícil</span></p>
+                    </div>
+                    <p class="text-gray-400 game-card-content">Despertás en una base lunar. Las luces fallan. Algo se mueve. Explorás pasillos. Recolectás objetos. Escuchás ruidos. Y lo peor: sabés que alguien a tu lado quizás tenga una misión secreta que implica dejarte morir. Cada decisión puede matarte. Cada sala puede esconder tu final. Esto no es un juego. Es sobrevivencia espacial pura.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Guía -->
+    <footer class="bg-gray-800/70 border-t border-gray-700 mt-12 py-12">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="font-title text-4xl text-orange-300 mb-6">📜 ¿Cómo se juega este menú?</h2>
+            <div class="max-w-md mx-auto text-left space-y-3 text-lg">
+                <p class="flex items-start"><span class="text-orange-400 mr-3 mt-1">🍢</span><span><strong>Entrada:</strong> para reír, gritar o hacer reflejos locos.</span></p>
+                <p class="flex items-start"><span class="text-orange-400 mr-3 mt-1">🍽️</span><span><strong>Plato fuerte:</strong> para competir con elegancia (o malicia).</span></p>
+                <p class="flex items-start"><span class="text-orange-400 mr-3 mt-1">🤝</span><span><strong>Cooperativo:</strong> para unir fuerzas (o pelear por decisiones).</span></p>
+                <p class="flex items-start"><span class="text-orange-400 mr-3 mt-1">🍰</span><span><strong>Postre:</strong> dulce... con cuchillos ocultos.</span></p>
+                <p class="flex items-start"><span class="text-red-500 mr-3 mt-1">🥃</span><span>Y si queda noche... que empiece la pesadilla lunar.</span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
